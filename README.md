@@ -8,3 +8,5 @@ Aplikacija je napravljena u svrhu Završnog rada na Akademiji strukovnih studija
   - ekrana test, koji predstavlja suštinu aplikacije i na njemu se prikazuje 60 nasumično izabranih pitanja iz postojeće baze i u okviru ovog dela se simulira 
  sam prijemni ispit. Odgovara se na pitanja biranjem jednog od ponuđenih odgovora i na kraju testa se klikom na dugme potvrdi dobija informacija o postignutom rezultatu. 
    - na počentom ekranu se nalaze dugmići za preuzimanje aktuelnog informatora i priručnika
+   - 
+![Uploading Screenshot_2022-04-06-14-03-06-719_com.example.pripremazaprijemni.jpg…]()
