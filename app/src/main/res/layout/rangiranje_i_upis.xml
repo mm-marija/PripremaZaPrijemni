@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/naslovRangiranjeIUpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/delius"
+        android:text="Рангирање и упис"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/closeRangiranjeIUpis"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="X"
+        android:textColor="#3C3B3B"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#03010100"
+        app:strokeColor="#03010100" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/opisRangiranjeIUpis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/delius"
+            android:gravity="center_horizontal"
+            android:justificationMode="none"
+            android:lineSpacingExtra="3sp"
+            android:paddingLeft="5dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:text="Након полагања пријемног испита, објављује се прелиминарна (07. септембра), а потом и коначна ранг листа (08. септембра).
+Кандидат на основу успеха у средњој школи може да оствари максимално 40 бодова, док на пријемном испиту може остварити максимално 60 бодова.
+Доњи праг за упис за самофинансирајуће студенте је 35 бодова.
+
+Ако кандидат који је остварио право на упис одустане од уписа у предвиђеном року (детаљније у делу Упис), на његовом месту ће бити уписан први следећи кандидат са листе.Упис кандидата са кончне ранг листе вршиће се 09., 12. и 13. септембра 2021. године од 10:00 до 13:00 часова.
+За упис кандидата потребно је:\n Оригинална диплома o стеченом средњем образовању и извод из матичне књиге рођених;\n Оригинална сведочанства свих разреда средње школе;\n 2 слике (као за пасош);\n Индекс и 2 обрасца ШВ (добијају се у Одсеку на основу уплаћене накнаде за упис у прву годину студија)\n Очитана лична карта односно фотокопија личне карте;\n Доказ о уплати накнаде за упис у прву годину ОСНОВНИХ студија у износу од 2,500.00 дин;\n Доказ о уплати школарине;\n За више детаља посетите сајт Академије струковних студија\n Шумадија - одсек Аранђеловац."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/naslovRangiranjeIUpis" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

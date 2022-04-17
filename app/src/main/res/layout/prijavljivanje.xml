@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/blue"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/naslovPrijavljivanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/delius"
+        android:text="Пријављивање"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/opisPrijavljivanje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/delius"
+            android:gravity="center_horizontal"
+            android:justificationMode="none"
+            android:lineSpacingExtra="3sp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Први корак ка упису било ког студијског програма је пријава. Пријављивање за упис и полагање пријемног испита траје од  01. септембра до 06. септембра 2021. године, сваког радног дана од 10:00 до 13:00 часова.
+Пријава се подноси личним доласком у Одсек, у терминима на основу конкурса за упис у школској 2021/22. Право уписа имају сви кандидати који су завршили трогодишње или четворогодишње средње образовање. За пријављивање кандидата на конкурс потребно је:\nСведочанства свих разреда средње школе (оригинали или фотокопије); Дипломa о стеченом средњем образовању (фотокопије и оригинал на увид );
+\nИзвод из матичне књиге рођених;\nОчитану личну карту односно фотокопију личне карте;\nДоказ о уплати накнаде за полагање пријемног испита у износу од 4,000.00 динара, уплаћује се на текући рачун 840-2113666-20. Пријава кандидата (формулар се добија у Одсеку); За више детаља посетите сајт Академије струковних студија Шумадија - одсек Аранђеловац."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/naslovPrijavljivanje" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/closePrijavljivanje"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="X"
+        android:textColor="#3C3B3B"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#03010100"
+        app:strokeColor="#03010100" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

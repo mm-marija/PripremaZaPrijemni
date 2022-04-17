@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/prijavaBtn"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.5"
+                android:background="#03010100"
+                android:backgroundTint="#03010100"
+                android:foregroundTint="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/prijava"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/prijemniBtn"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.5"
+                android:background="#03010100"
+                android:backgroundTint="#03010100"
+                android:paddingRight="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/prijemni"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavaBtn" />
+
+            <ImageButton
+                android:id="@+id/rangiranjeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.5"
+                android:background="#03010100"
+                android:backgroundTint="#03010100"
+                android:paddingRight="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rangiranje_i_upis"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijemniBtn" />
+
+            <TextView
+                android:id="@+id/prijavaTv"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/delius"
+                android:gravity="center"
+                android:text="Пријава"
+                android:textColor="#C1000000"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="@+id/prijavaBtn"
+                app:layout_constraintEnd_toEndOf="@+id/prijavaBtn"
+                app:layout_constraintStart_toStartOf="@+id/prijavaBtn"
+                app:layout_constraintTop_toTopOf="@+id/prijavaBtn" />
+
+            <TextView
+                android:id="@+id/prijemniTv"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/delius"
+                android:gravity="center"
+                android:text="Пријемни испит"
+                android:textColor="#C1000000"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="@+id/prijemniBtn"
+                app:layout_constraintEnd_toEndOf="@+id/prijemniBtn"
+                app:layout_constraintStart_toStartOf="@+id/prijemniBtn"
+                app:layout_constraintTop_toBottomOf="@+id/prijavaBtn" />
+
+            <TextView
+                android:id="@+id/rangiranjeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/delius"
+                android:gravity="center"
+                android:text="Рангирање и упис"
+                android:textColor="#C1000000"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/rangiranjeBtn"
+                app:layout_constraintStart_toStartOf="@+id/rangiranjeBtn"
+                app:layout_constraintTop_toBottomOf="@+id/prijemniBtn"
+
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/homeAsUpIndicator" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

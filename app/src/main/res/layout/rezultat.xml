@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:backgroundTint="#FFFFFF">
+
+    <TextView
+        android:id="@+id/rezTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/delius"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rezTv2"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/delius"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rezTv" />
+
+
+    <Button
+        android:id="@+id/noviTest"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#227AE7"
+        android:fontFamily="@font/delius"
+        android:text="Нови тест"
+        app:layout_constraintStart_toEndOf="@+id/pocetna"
+        app:layout_constraintTop_toBottomOf="@+id/rezTv2" />
+
+    <Button
+        android:id="@+id/pocetna"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#E79F24"
+        android:fontFamily="@font/delius"
+        android:text="Почетна"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rezTv2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
